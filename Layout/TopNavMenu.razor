@@ -1,23 +1,20 @@
 ﻿
 <MudThemeProvider />
 
-
-<MudAppBar Elevation="1">
+<MudAppBar Elevation="1" Color="Color.Default" Style="background-color: #2b2b2b; position: static;">
     <NavLink href="/">
-            <MudText Typo="Typo.h5" class="ml-3" style="color: black;">Crypto In Blazor</MudText>
+        <MudText Typo="Typo.h5" Class="ml-3" Style="color: white;">Crypto In Blazor</MudText>
     </NavLink>
     <MudSpacer />
-        <MudMenu Direction="Direction.Bottom" OffsetY="true" Icon="@Icons.Material.Filled.MoreVert" Class="rotate-icon" Color="Color.Inherit" Edge="Edge.End">
-                <NavLink href="/bitcoin">
-                        <MudMenuItem IconSize="Size.Large" IconColor="Color.Dark" Icon="@Icons.Material.Filled.CurrencyBitcoin">Bitcoin</MudMenuItem>
-                </NavLink>
-                
-                <MudMenuItem IconSize="Size.Large" IconColor="Color.Dark" Icon="@Icons.Material.Filled.DoorFront">Door</MudMenuItem>
-                
-                <MudMenuItem IconSize="Size.Large" IconColor="Color.Dark" Icon="@Icons.Material.Filled.Window">Window</MudMenuItem>
-                
-        </MudMenu>
+    <MudMenu Direction="Direction.Bottom" OffsetY="true" Icon="@Icons.Material.Filled.MoreVert" Class="rotate-icon" Color="Color.Inherit" Edge="Edge.End" Style="color: white;">
+        <NavLink href="/bitcoin">
+            <MudMenuItem IconSize="Size.Large" IconColor="Color.Default" Icon="@Icons.Material.Filled.CurrencyBitcoin" Style="color: #2b2b2b;">Bitcoin</MudMenuItem>
+        </NavLink>
+        <MudMenuItem IconSize="Size.Large" IconColor="Color.Default" Icon="@Icons.Material.Filled.DoorFront" Style="color: #2b2b2b;">Door</MudMenuItem>
+        <MudMenuItem IconSize="Size.Large" IconColor="Color.Default" Icon="@Icons.Material.Filled.Window" Style="color: #2b2b2b;">Window</MudMenuItem>
+    </MudMenu>
 </MudAppBar>
+
 
 
 
