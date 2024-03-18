@@ -1,0 +1,27 @@
+﻿
+<MudThemeProvider />
+
+
+<MudAppBar Elevation="1">
+    <NavLink href="/">
+            <MudText Typo="Typo.h5" class="ml-3" style="color: black;">Crypto In Blazor</MudText>
+    </NavLink>
+    <MudSpacer />
+        <MudMenu Direction="Direction.Bottom" OffsetY="true" Icon="@Icons.Material.Filled.MoreVert" Class="rotate-icon" Color="Color.Inherit" Edge="Edge.End">
+                <NavLink href="/bitcoin">
+                        <MudMenuItem IconSize="Size.Large" IconColor="Color.Dark" Icon="@Icons.Material.Filled.CurrencyBitcoin">Bitcoin</MudMenuItem>
+                </NavLink>
+                
+                <MudMenuItem IconSize="Size.Large" IconColor="Color.Dark" Icon="@Icons.Material.Filled.DoorFront">Door</MudMenuItem>
+                
+                <MudMenuItem IconSize="Size.Large" IconColor="Color.Dark" Icon="@Icons.Material.Filled.Window">Window</MudMenuItem>
+                
+        </MudMenu>
+</MudAppBar>
+
+
+
+
+@code {
+    
+}
